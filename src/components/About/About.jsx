@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaClinicMedical, FaUserNurse, FaMobileAlt, FaBalanceScale } from 'react-icons/fa';
 import { MdHealthAndSafety, MdAccessible } from 'react-icons/md';
-import teamImg from '../../assets/team.jpg';
+import teamImg from '../../assets/Team.jpg';
 import './About.css';
 
 const About = () => {
