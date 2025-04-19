@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FaBars, FaTimes, FaUserMd, FaUserNurse } from 'react-icons/fa';
-import './Navbar.css';
+import './NavBar.css';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
