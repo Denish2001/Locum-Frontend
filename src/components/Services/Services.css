@@ -1,0 +1,356 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');/* Services Page Styles */
+:root {
+  --primary-green: #093C2E;
+  --dark-green: #06271f;
+  --medium-green: #0D5A48;
+  --light-green: #127A5E;
+  --accent-gold: #EFBB32;
+  --light-gold: #F8D778;
+  --white: #ffffff;
+  --light-gray: #f8f9fa;
+  --medium-gray: #e9ecef;
+  --dark-gray: #2a2a2a;
+  --text-gray: #6B7280;
+  --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Fonts */
+
+
+.services-page {
+  font-family: 'Poppins', sans-serif;
+  color: var(--dark-gray);
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+/* Hero Section */
+.services-hero {
+  background: linear-gradient(rgba(9, 60, 46, 0.85), rgba(9, 60, 46, 0.9)), 
+              url('../assets/healthcare-team.jpg') center/cover no-repeat;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  padding: 4rem 2rem;
+  color: var(--white);
+  position: relative;
+}
+
+.hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+}
+
+.badge {
+  display: inline-block;
+  background: rgba(239, 187, 50, 0.15);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(239, 187, 50, 0.3);
+  border-radius: 50px;
+  padding: 8px 20px;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.services-hero h1 {
+  font-size: 3.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.services-hero h1 .highlight {
+  position: relative;
+  display: inline-block;
+}
+
+.services-hero h1 .highlight::after {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 100%;
+  height: 12px;
+  background: rgba(239, 187, 50, 0.3);
+  z-index: -1;
+  transform: skew(-15deg);
+}
+
+.services-hero .subtitle {
+  font-size: 1.25rem;
+  max-width: 700px;
+  margin: 0 auto;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+/* Main Content */
+.services-main {
+  padding: 4rem 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.service-category {
+  margin-bottom: 4rem;
+}
+
+.category-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.category-header h2 {
+  font-size: 2.25rem;
+  color: var(--primary-green);
+  margin-bottom: 1rem;
+}
+
+.category-header p {
+  font-size: 1.1rem;
+  color: var(--text-gray);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Services Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.service-card {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(to right, var(--primary-green), var(--medium-green));
+  transition: var(--transition);
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.service-card:hover::before {
+  height: 6px;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.icon-container {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  color: var(--white);
+  font-size: 1.5rem;
+}
+
+.service-card h3 {
+  font-size: 1.25rem;
+  color: var(--primary-green);
+  margin-bottom: 0;
+}
+
+.description {
+  color: var(--text-gray);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stats {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--accent-gold);
+}
+
+.cta-button {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  color: var(--primary-green);
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: var(--transition);
+  padding: 0.5rem 0;
+}
+
+.cta-button:hover {
+  color: var(--medium-green);
+}
+
+.cta-button svg {
+  margin-left: 0.5rem;
+  transition: var(--transition);
+}
+
+.cta-button:hover svg {
+  transform: translateX(3px);
+}
+
+/* CTA Section */
+.services-cta {
+  background: var(--light-gray);
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.services-cta h2 {
+  font-size: 2.25rem;
+  color: var(--primary-green);
+  margin-bottom: 1rem;
+}
+
+.services-cta p {
+  font-size: 1.1rem;
+  color: var(--text-gray);
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.primary-cta, .secondary-cta {
+  padding: 0.8rem 2rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.primary-cta {
+  background: var(--primary-green);
+  color: var(--white);
+  border: 2px solid var(--primary-green);
+}
+
+.primary-cta:hover {
+  background: var(--dark-green);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(9, 60, 46, 0.2);
+}
+
+.secondary-cta {
+  background: transparent;
+  color: var(--primary-green);
+  border: 2px solid var(--primary-green);
+}
+
+.secondary-cta:hover {
+  background: rgba(9, 60, 46, 0.05);
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .services-hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .services-hero {
+    min-height: 350px;
+    padding: 3rem 1rem;
+  }
+  
+  .services-hero h1 {
+    font-size: 2rem;
+  }
+  
+  .services-hero .subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .category-header h2 {
+    font-size: 1.8rem;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .primary-cta, .secondary-cta {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 576px) {
+  .services-hero {
+    min-height: 300px;
+  }
+  
+  .services-hero h1 {
+    font-size: 1.8rem;
+  }
+  
+  .badge {
+    font-size: 0.8rem;
+    padding: 6px 16px;
+  }
+  
+  .card-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .icon-container {
+    margin-bottom: 1rem;
+  }
+}

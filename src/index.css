@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');/* Services Page Styles */
+
+body {
+  margin: 0;
+  font-family: poppins, sans-serif;
+  justify-content: space-around;
+  
+}
+:root {
+  --content-max-width: 1440px;
+  --content-padding: clamp(1rem, 5vw, 3rem);
+  --section-spacing: clamp(3rem, 6vw, 6rem);
+}

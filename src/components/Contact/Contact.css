@@ -1,0 +1,228 @@
+/* Locum Contact Component Styles */
+.locum-contact-section {
+  padding: 5rem 1rem;
+  background: linear-gradient(to bottom, #f8f9fa, #ffffff);
+  position: relative;
+}
+
+.locum-contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+/* Header Styles */
+.locum-contact-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.locum-contact-icon {
+  width: 70px;
+  height: 70px;
+  background: rgba(239, 187, 50, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  color: #EFBB32;
+  font-size: 2rem;
+}
+
+.locum-contact-header h2 {
+  font-size: 2.25rem;
+  color: #093C2E;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.locum-contact-header p {
+  font-size: 1.1rem;
+  color: #6B7280;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Contact Grid Layout */
+.locum-contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+/* Contact Info Section */
+.locum-contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.locum-info-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.locum-info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.locum-info-icon {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(to right, #093C2E, #0D5A48);
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.locum-info-content h3 {
+  font-size: 1.2rem;
+  color: #093C2E;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.locum-info-content p {
+  color: #6B7280;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Contact Form Styles */
+.locum-contact-form-container {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.locum-form-success {
+  background: rgba(76, 175, 80, 0.1);
+  color: #093C2E;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  border-left: 4px solid #4CAF50;
+}
+
+.locum-contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.locum-form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.locum-form-group input,
+.locum-form-group textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.locum-form-group input:focus,
+.locum-form-group textarea:focus {
+  outline: none;
+  border-color: #0D5A48;
+  box-shadow: 0 0 0 3px rgba(13, 90, 72, 0.1);
+}
+
+.locum-form-group textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.locum-input-error {
+  border-color: #EF4444 !important;
+}
+
+.locum-input-error:focus {
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1) !important;
+}
+
+.locum-error-message {
+  color: #EF4444;
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+}
+
+.locum-submit-btn {
+  background: linear-gradient(to right, #093C2E, #0D5A48);
+  color: #ffffff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  margin-top: 0.5rem;
+}
+
+.locum-submit-btn:hover {
+  background: linear-gradient(to right, #0D5A48, #127A5E);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(9, 60, 46, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .locum-contact-header h2 {
+    font-size: 1.8rem;
+  }
+  
+  .locum-contact-header p {
+    font-size: 1rem;
+  }
+  
+  .locum-info-card {
+    padding: 1.2rem;
+  }
+  
+  .locum-contact-form-container {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .locum-contact-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+  }
+  
+  .locum-info-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .locum-info-icon {
+    margin-bottom: 1rem;
+  }
+}

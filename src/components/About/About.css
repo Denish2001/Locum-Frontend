@@ -1,0 +1,369 @@
+/* About Page Styles with Unique Class Names */
+:root {
+  --locum-primary-green: #093C2E;
+  --locum-accent-gold: #EFBB32;
+  --locum-white: #ffffff;
+  --locum-light-gray: #f8f9fa;
+  --locum-dark-gray: #2a2a2a;
+  --locum-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.locum-about-container {
+  font-family: 'Poppins', sans-serif;
+  color: var(--locum-dark-gray);
+  line-height: 1.6;
+}
+
+.locum-about-container h1,
+.locum-about-container h2,
+.locum-about-container h3,
+.locum-about-container h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+.locum-about-container-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Hero Section */
+.locum-about-hero {
+  height: 60vh;
+  min-height: 500px;
+  background: linear-gradient(rgba(9, 60, 46, 0.7), rgba(9, 60, 46, 0.7)), 
+              url('../assets/healthcare-hero.jpg') center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--locum-white);
+}
+
+.locum-about-hero-title {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.locum-about-hero-subtitle {
+  font-size: 1.5rem;
+  max-width: 700px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+/* Problem Section */
+.locum-about-problem-section {
+  padding: 5rem 0;
+  background: var(--locum-white);
+}
+
+.locum-about-section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: var(--locum-primary-green);
+}
+
+.locum-about-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.locum-about-stat-item {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: var(--locum-light-gray);
+  border-radius: 8px;
+  transition: var(--locum-transition);
+}
+
+.locum-about-stat-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.locum-about-stat-icon {
+  font-size: 2.5rem;
+  color: var(--locum-accent-gold);
+  margin-bottom: 1rem;
+}
+
+.locum-about-stat-number {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--locum-primary-green);
+  margin-bottom: 0.5rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.locum-about-stat-label {
+  font-size: 1.1rem;
+  color: var(--locum-dark-gray);
+}
+
+.locum-about-problem-text {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* Solution Section */
+.locum-about-solution-section {
+  padding: 5rem 0;
+  background: var(--locum-light-gray);
+}
+
+.locum-about-solution-content {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
+
+.locum-about-solution-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.locum-about-solution-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.locum-about-solution-card {
+  background: var(--locum-white);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: var(--locum-transition);
+  text-align: center;
+}
+
+.locum-about-solution-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.locum-about-solution-icon {
+  font-size: 2.5rem;
+  color: var(--locum-accent-gold);
+  margin-bottom: 1.5rem;
+}
+
+.locum-about-card-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--locum-primary-green);
+}
+
+.locum-about-card-text {
+  color: #555;
+  font-size: 1rem;
+}
+
+/* Team Section */
+.locum-about-team-section {
+  padding: 5rem 0;
+  background: var(--locum-white);
+}
+
+.locum-about-team-section .locum-about-container-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.locum-about-team-image img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.locum-about-team-text {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+}
+
+.locum-about-mission-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.locum-about-mission-item {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.locum-about-mission-item:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.6rem;
+  width: 1rem;
+  height: 2px;
+  background: var(--locum-accent-gold);
+}
+
+/* Values Section */
+.locum-about-values-section {
+  padding: 5rem 0;
+  background: var(--locum-light-gray);
+  text-align: center;
+}
+
+.locum-about-values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.locum-about-value-card {
+  background: var(--locum-white);
+  padding: 2rem;
+  border-radius: 8px;
+  transition: var(--locum-transition);
+}
+
+.locum-about-value-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.locum-about-value-icon {
+  font-size: 2.5rem;
+  color: var(--locum-accent-gold);
+  margin-bottom: 1.5rem;
+}
+
+/* CTA Section */
+.locum-about-cta-section {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, var(--locum-primary-green) 0%, #0a4735 100%);
+  color: var(--locum-white);
+  text-align: center;
+}
+
+.locum-about-cta-title {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.locum-about-cta-text {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  opacity: 0.9;
+}
+
+.locum-about-cta-buttons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.locum-about-cta-button {
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: var(--locum-transition);
+  border: 2px solid transparent;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.locum-about-cta-primary {
+  background: var(--locum-accent-gold);
+  color: var(--locum-primary-green);
+}
+
+.locum-about-cta-primary:hover {
+  background: transparent;
+  color: var(--locum-accent-gold);
+  border-color: var(--locum-accent-gold);
+  transform: translateY(-3px);
+}
+
+.locum-about-cta-secondary {
+  background: transparent;
+  color: var(--locum-white);
+  border-color: var(--locum-white);
+}
+
+.locum-about-cta-secondary:hover {
+  background: rgba(255,255,255,0.1);
+  transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .locum-about-hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .locum-about-hero-subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .locum-about-team-section .locum-about-container-inner {
+    grid-template-columns: 1fr;
+  }
+  
+  .locum-about-team-image {
+    order: -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .locum-about-hero {
+    height: 50vh;
+    min-height: 400px;
+  }
+  
+  .locum-about-hero-title {
+    font-size: 2rem;
+  }
+  
+  .locum-about-section-title,
+  .locum-about-cta-title {
+    font-size: 2rem;
+  }
+  
+  .locum-about-cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .locum-about-cta-button {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 576px) {
+  .locum-about-hero {
+    height: 60vh;
+  }
+  
+  .locum-about-hero-title {
+    font-size: 1.8rem;
+  }
+  
+  .locum-about-stat-number {
+    font-size: 2rem;
+  }
+}
