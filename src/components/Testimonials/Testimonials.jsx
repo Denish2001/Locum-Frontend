@@ -10,7 +10,7 @@ const testimonials = [
     role: 'Emergency Physician',
     content: 'Locum Health has transformed how I work. I can now choose shifts that fit my family life while earning competitive rates. The platform is so easy to use!',
     rating: 5,
-    avatar: '/avatars/doctor1.jpg'
+    avatar: '/doctor.jpg'
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ const testimonials = [
     role: 'Nursing Home Administrator',
     content: 'We rely on Locum Health for last-minute staffing needs. The quality of professionals is consistently excellent, and the booking process takes minutes.',
     rating: 5,
-    avatar: '/avatars/admin1.jpg'
+    avatar: '/doctor.jpg'
   },
   {
     id: 3,
@@ -26,7 +26,7 @@ const testimonials = [
     role: 'ICU Nurse',
     content: 'As a traveling nurse, I love the flexibility. I can work in different facilities without long-term commitments. Payments are always prompt too.',
     rating: 4,
-    avatar: '/avatars/nurse1.jpg'
+    avatar: '/doctor.jpg'
   }
 ];
 
