@@ -4,6 +4,7 @@ import { MdHealthAndSafety, MdOutlineVerifiedUser } from 'react-icons/md';
 import { GiHospitalCross } from 'react-icons/gi';
 import heroImage from '../../assets/Team.jpg'; // Replace with your image
 import './Hero.css'; // Import your CSS file
+import { Link } from 'react-router-dom';
 import Testimonials from '../Testimonials/Testimonials'; // Import Testimonials component
 
 const Hero = () => {
@@ -31,12 +32,12 @@ const Hero = () => {
           </p>
           
           <div className="locum-hero-cta">
-            <a href="/signup" className="locum-primary-btn">
+            <Link to="/Services" className="locum-primary-btn">
               Find Staff
-            </a>
-            <a href="/register" className="locum-secondary-btn">
+            </Link>
+            <Link to="/Services" className="locum-secondary-btn">
               Join as Professional
-            </a>
+            </Link>
           </div>
           
           {/* Stats Grid */}
