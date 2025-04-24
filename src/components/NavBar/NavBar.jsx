@@ -56,10 +56,10 @@ const Navbar = () => {
 
         {/* Auth Buttons - Desktop */}
         <div className="locum-auth-buttons">
-          <Link to="/login" className="locum-auth-btn locum-login-btn">
+          <Link to="/Login" className="locum-auth-btn locum-login-btn">
             Login
           </Link>
-          <Link to="/signup" className="locum-auth-btn locum-signup-btn">
+          <Link to="/Signup" className="locum-auth-btn locum-signup-btn">
             Sign Up
           </Link>
         </div>
@@ -90,10 +90,10 @@ const Navbar = () => {
               </li>
             ))}
             <div className="locum-mobile-auth-buttons">
-              <Link to="/login" className="locum-mobile-auth-btn locum-mobile-login-btn">
+              <Link to="/Login" className="locum-mobile-auth-btn locum-mobile-login-btn">
                 Login
               </Link>
-              <Link to="/signup" className="locum-mobile-auth-btn locum-mobile-signup-btn">
+              <Link to="/Signup" className="locum-mobile-auth-btn locum-mobile-signup-btn">
                 Sign Up
               </Link>
             </div>

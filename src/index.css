@@ -11,3 +11,14 @@ body {
   --content-padding: clamp(1rem, 5vw, 3rem);
   --section-spacing: clamp(3rem, 6vw, 6rem);
 }
+/* globals.css or wherever you keep styles */
+.input-field {
+  @apply w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+.btn-primary {
+  @apply px-4 py-2 rounded-md bg-blue-600 hover:bg-blue-700 text-white text-sm;
+}
+
+.btn-secondary {
+  @apply px-4 py-2 rounded-md bg-gray-200 hover:bg-gray-300 text-sm;
+}

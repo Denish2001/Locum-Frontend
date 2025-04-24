@@ -1,0 +1,114 @@
+:root {
+    --primary-green: #093C2E;
+    --dark-green: #06271f;
+    --medium-green: #0D5A48;
+    --light-green: #127A5E;
+    --accent-gold: #EFBB32;
+    --light-gold: #F8D778;
+    --white: #ffffff;
+    --light-gray: #f8f9fa;
+    --medium-gray: #e9ecef;
+    --dark-gray: #2a2a2a;
+    --text-gray: #6B7280;
+    --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+  
+  body {
+    font-family: 'Poppins', 'Montserrat', sans-serif;
+  }
+  
+  .facility-form {
+    max-width: 600px;
+    margin: 4rem auto;
+    background-color: var(--white);
+    padding: 3rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+    border-left: 10px solid var(--accent-gold);
+  }
+  
+  .form-title {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary-green);
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    margin-bottom: 0.5rem;
+    color: var(--dark-green);
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+  
+  .form-group input {
+    padding: 0.8rem 1rem;
+    border-radius: 0.8rem;
+    border: 1px solid var(--medium-gray);
+    background-color: var(--light-gray);
+    font-size: 1rem;
+    outline: none;
+    transition: var(--transition);
+  }
+  
+  .form-group input:focus {
+    border-color: var(--light-green);
+    background-color: var(--white);
+    box-shadow: 0 0 0 3px rgba(18, 122, 94, 0.2);
+  }
+  
+  .form-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-top: 1.2rem;
+    color: var(--text-gray);
+    font-size: 0.95rem;
+  }
+  
+  .form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+  }
+  
+  .btn-primary,
+  .btn-secondary {
+    padding: 0.9rem 2rem;
+    font-size: 1rem;
+    border-radius: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    border: none;
+  }
+  
+  .btn-primary {
+    background-color: var(--medium-green);
+    color: var(--white);
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--light-green);
+  }
+  
+  .btn-secondary {
+    background-color: var(--medium-gray);
+    color: var(--dark-gray);
+  }
+  
+  .btn-secondary:hover {
+    background-color: var(--dark-gray);
+    color: var(--white);
+  }
+  

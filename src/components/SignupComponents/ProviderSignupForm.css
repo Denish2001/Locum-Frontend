@@ -1,0 +1,312 @@
+/* Font imports */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Montserrat:wght@400;500;600&display=swap');
+
+/* Base styles */
+.neo-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--primary-green) 0%, var(--dark-green) 100%);
+  padding: 2rem;
+}
+
+.neo-form {
+  width: 100%;
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.36);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.neo-form::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(239, 187, 50, 0.1) 0%, transparent 70%);
+  animation: rotate 20s linear infinite;
+  z-index: -1;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.neo-form-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--white);
+  text-align: center;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.neo-form-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--accent-gold);
+  margin: 0.5rem auto 0;
+}
+
+/* Avatar Upload */
+.neo-avatar-upload {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 2rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px dashed var(--light-gold);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: var(--transition);
+  overflow: hidden;
+  position: relative;
+}
+
+.neo-avatar-upload:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-3px);
+}
+
+.neo-avatar-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--light-gold);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.neo-upload-icon {
+  width: 24px;
+  height: 24px;
+  fill: var(--light-gold);
+  margin-bottom: 0.5rem;
+}
+
+.neo-avatar-preview {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.neo-file-input {
+  display: none;
+}
+
+/* Form Grid */
+.neo-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Input Groups */
+.neo-input-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.neo-input {
+  width: 100%;
+  padding: 1rem 1rem 0.5rem 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  color: var(--white);
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  outline: none;
+  transition: var(--transition);
+}
+
+.neo-input:focus {
+  border-bottom-color: var(--accent-gold);
+}
+
+.neo-input:focus + .neo-label,
+.neo-input:not(:placeholder-shown) + .neo-label {
+  transform: translateY(-1.2rem) scale(0.8);
+  color: var(--accent-gold);
+}
+
+.neo-label {
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  pointer-events: none;
+  transition: var(--transition);
+  transform-origin: left top;
+}
+
+.neo-input-highlight {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--accent-gold);
+  transition: var(--transition);
+}
+
+.neo-input:focus ~ .neo-input-highlight {
+  width: 100%;
+}
+
+/* Checkbox */
+.neo-checkbox {
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 0 2rem;
+  cursor: pointer;
+}
+
+.neo-checkbox-input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.neo-checkbox-custom {
+  position: relative;
+  height: 20px;
+  width: 20px;
+  background: transparent;
+  border: 2px solid var(--light-gold);
+  border-radius: 4px;
+  margin-right: 10px;
+  transition: var(--transition);
+}
+
+.neo-checkbox-input:checked ~ .neo-checkbox-custom {
+  background: var(--accent-gold);
+  border-color: var(--accent-gold);
+}
+
+.neo-checkbox-custom::after {
+  content: '';
+  position: absolute;
+  display: none;
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.neo-checkbox-input:checked ~ .neo-checkbox-custom::after {
+  display: block;
+}
+
+.neo-checkbox-label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  color: var(--white);
+}
+
+/* Buttons */
+.neo-form-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.neo-btn {
+  padding: 0.8rem 2rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: var(--transition);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+}
+
+.neo-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: 0.5s;
+}
+
+.neo-btn:hover::before {
+  left: 100%;
+}
+
+.neo-btn-primary {
+  background: var(--accent-gold);
+  color: var(--dark-green);
+  box-shadow: 0 4px 15px rgba(239, 187, 50, 0.3);
+}
+
+.neo-btn-primary:hover {
+  background: var(--light-gold);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(239, 187, 50, 0.4);
+}
+
+.neo-btn-secondary {
+  background: transparent;
+  color: var(--white);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.neo-btn-secondary:hover {
+  border-color: var(--accent-gold);
+  color: var(--accent-gold);
+  transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .neo-form-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .neo-form {
+    padding: 1.5rem;
+  }
+  
+  .neo-form-title {
+    font-size: 1.5rem;
+  }
+}

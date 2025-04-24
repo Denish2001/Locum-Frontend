@@ -1,0 +1,463 @@
+/* Base Styles */
+.healthcare-auth__container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background-color: #f8f9fa;
+  gap: 5rem;
+  padding: 5rem 1rem;
+}
+
+.healthcare-auth__gradient-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #1db954 0%, #1ed760 100%);
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.healthcare-auth__gradient-bg--signup {
+  background: linear-gradient(135deg, #1a73e8 0%, #6ec1e4 100%);
+}
+
+.healthcare-auth__card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  width: 100%;
+  max-width: 450px;
+  z-index: 1;
+  position: relative;
+}
+
+.healthcare-auth__card--signup {
+  max-width: 600px;
+}
+
+.healthcare-auth__logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.healthcare-auth__logo-icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.healthcare-auth__logo h2 {
+  color: #333;
+  font-weight: 700;
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.healthcare-auth__title {
+  color: #333;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.healthcare-auth__subtitle {
+  color: #666;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Form Styles */
+.healthcare-auth__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.healthcare-auth__input-group {
+  position: relative;
+}
+
+.healthcare-auth__input-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666;
+}
+
+.healthcare-auth__input {
+  width: 100%;
+  padding: 15px 15px 15px 45px;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.healthcare-auth__input:focus {
+  outline: none;
+  border-color: #1db954;
+  box-shadow: 0 0 0 2px rgba(29, 185, 84, 0.2);
+}
+
+.healthcare-auth__input--textarea {
+  padding: 15px;
+  min-height: 100px;
+  resize: vertical;
+}
+
+.healthcare-auth__options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+}
+
+.healthcare-auth__remember {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #666;
+}
+
+.healthcare-auth__remember input {
+  accent-color: #1db954;
+}
+
+.healthcare-auth__forgot {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.healthcare-auth__forgot:hover {
+  text-decoration: underline;
+}
+
+.healthcare-auth__submit {
+  background-color: #1db954;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.healthcare-auth__submit:hover {
+  background-color: #1ed760;
+  transform: translateY(-2px);
+}
+
+/* Divider */
+.healthcare-auth__divider {
+  display: flex;
+  align-items: center;
+  color: #999;
+  font-size: 0.8rem;
+  margin: 10px 0;
+}
+
+.healthcare-auth__divider::before,
+.healthcare-auth__divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #ddd;
+}
+
+.healthcare-auth__divider::before {
+  margin-right: 10px;
+}
+
+.healthcare-auth__divider::after {
+  margin-left: 10px;
+}
+
+/* Social Buttons */
+.healthcare-auth__social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid #ddd;
+  background: white;
+}
+
+.healthcare-auth__social:hover {
+  background: #f5f5f5;
+}
+
+.healthcare-auth__social--google {
+  color: #333;
+}
+
+/* Switch Link */
+.healthcare-auth__switch {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 20px;
+}
+
+.healthcare-auth__switch a {
+  color: #1a73e8;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.healthcare-auth__switch a:hover {
+  text-decoration: underline;
+}
+
+/* Stats Section */
+.healthcare-auth__stats {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+  text-align: center;
+  color: #333;
+}
+
+.healthcare-auth__stat-item {
+  padding: 0 15px;
+}
+
+.healthcare-auth__stat-item h4 {
+  font-size: 1.5rem;
+  margin: 0;
+  color: #1db954;
+}
+
+.healthcare-auth__stat-item p {
+  font-size: 0.8rem;
+  margin: 5px 0 0;
+}
+
+/* Signup Specific Styles */
+.healthcare-auth__user-type-select {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.healthcare-auth__user-type {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.healthcare-auth__user-type:hover {
+  border-color: #1db954;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.healthcare-auth__user-type--active {
+  border-color: #1db954;
+  background-color: rgba(29, 185, 84, 0.05);
+}
+
+.healthcare-auth__user-type-icon {
+  font-size: 1.8rem;
+  color: #1db954;
+  margin-bottom: 10px;
+}
+
+.healthcare-auth__user-type h4 {
+  margin: 0 0 5px;
+  color: #333;
+}
+
+.healthcare-auth__user-type p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+/* Profile Photo Upload */
+.healthcare-auth__profile-photo-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.healthcare-auth__profile-photo-preview {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-bottom: 15px;
+  border: 2px solid #ddd;
+}
+
+.healthcare-auth__profile-photo-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.healthcare-auth__profile-photo-placeholder {
+  font-size: 2.5rem;
+  color: #999;
+}
+
+.healthcare-auth__upload-label {
+  color: #1a73e8;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.healthcare-auth__upload-label:hover {
+  text-decoration: underline;
+}
+
+.healthcare-auth__file-input {
+  display: none;
+}
+
+/* Progress Bar */
+.healthcare-auth__progress-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.healthcare-auth__progress-step {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ddd;
+  color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.healthcare-auth__progress-step--active {
+  background-color: #1db954;
+  color: white;
+}
+
+.healthcare-auth__progress-connector {
+  width: 60px;
+  height: 2px;
+  background-color: #ddd;
+}
+
+/* Form Navigation */
+.healthcare-auth__next,
+.healthcare-auth__back {
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.healthcare-auth__next {
+  background-color: #1db954;
+  color: white;
+  border: none;
+  align-self: flex-end;
+}
+
+.healthcare-auth__next:hover {
+  background-color: #1ed760;
+  transform: translateY(-2px);
+}
+
+.healthcare-auth__back {
+  background-color: transparent;
+  color: #666;
+  border: 1px solid #ddd;
+}
+
+.healthcare-auth__back:hover {
+  border-color: #999;
+}
+
+.healthcare-auth__form-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Mission Section */
+.healthcare-auth__mission {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.healthcare-auth__mission h3 {
+  color: #1db954;
+  margin-top: 0;
+  font-size: 1.1rem;
+}
+
+.healthcare-auth__mission p {
+  margin: 5px 0;
+  font-size: 0.8rem;
+  color: #333;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .healthcare-auth__container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 5rem 1rem;
+  }
+  
+  .healthcare-auth__card {
+    padding: 30px 20px;
+    width: 100%;
+  }
+  
+  .healthcare-auth__user-type-select {
+    grid-template-columns: 1fr;
+  }
+  
+  .healthcare-auth__stats {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
